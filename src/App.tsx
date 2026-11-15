@@ -32,7 +32,7 @@ import { getRoutes } from './routes';
 function App() {
   return (
     <div className='App'>
-      <Router basename="/">
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           {getRoutes()}
         </Routes>
